@@ -34,3 +34,4 @@ export async function pullUpdates() {
 export function status() {
   return { ...syncState };
 }
+

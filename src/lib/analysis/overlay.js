@@ -78,3 +78,4 @@ export function renderAnalysisOverlay(
 
   return canvas;
 }
+

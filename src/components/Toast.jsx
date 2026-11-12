@@ -15,3 +15,4 @@ export default function Toast({ message, type = 'info', onDismiss }) {
     </div>
   );
 }
+

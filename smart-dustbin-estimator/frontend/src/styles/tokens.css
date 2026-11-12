@@ -1,0 +1,44 @@
+:root {
+  /* Core "Soil & Signal" Dark Theme Tokens (from Section 4.2) */
+  --soil-950: #0A0F0C;   /* Canvas background */
+  --soil-900: #101713;   /* Structural panels */
+  --soil-800: #17211B;   /* Raised cards, chamfered surfaces */
+  --soil-700: #223029;   /* Hover states, inputs, secondary blocks */
+  --line: #2E3E35;       /* Technical borders, grid lines, dividers */
+  
+  --bone: #EEE9DA;       /* High-contrast primary text */
+  --lichen: #8FA095;     /* Secondary and tertiary telemetry labels */
+  
+  /* Signal Colors */
+  --sprout: #B8F53C;     /* Acid sprout-lime: primary accent, OK fill, buttons */
+  --fern: #3FA66B;       /* Positive, emptied confirmations */
+  --rind: #F5A524;       /* Warning threshold (70-89%) */
+  --ember: #EB5A3C;      /* Critical threshold (>=90%), emergency alerts */
+  --tide: #4FC7C9;       /* Info metrics, secondary chart projections */
+  --ash: #5B6A61;        /* Offline / disabled indicators */
+
+  /* Structural Geometry */
+  --radius: 3px;
+  --cut: 10px;           /* Chamfer cut size */
+  
+  /* Typography Scale */
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Instrument Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Box Shadows & Glows */
+  --glow-sprout: 0 0 16px rgba(184, 245, 60, 0.22);
+  --glow-ember: 0 0 0 1px var(--ember), 0 0 18px rgba(235, 90, 60, 0.35);
+  --glow-rind: 0 0 14px rgba(245, 165, 36, 0.25);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+}
+

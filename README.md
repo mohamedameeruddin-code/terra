@@ -88,3 +88,4 @@ While v1 is strictly local-first on each device via IndexedDB, the sync interfac
 - **iOS Safari Storage Eviction:** Safari on iOS may purge local IndexedDB storage after ~7 days of non-use if accessed only through standard browser tabs. Installing the app via **"Add to Home Screen"** or periodically exporting JSON backups is recommended.
 - **Lighting & Framing Sensitivity:** Optimal edge and texture segmentation occurs when the container interior is evenly illuminated and the camera frames the entire rim and vertical body.
 - **iOS Safari Manual Install:** iOS does not provide an automated programmatic `beforeinstallprompt` API; users must manually tap "Add to Home Screen".
+

@@ -18,8 +18,8 @@ export default function FillColumn({
     status === 'CRITICAL' || clampedFill >= 90
       ? 'filled-critical'
       : status === 'WARN' || clampedFill >= 70
-      ? 'filled-warn'
-      : 'filled-ok';
+        ? 'filled-warn'
+        : 'filled-ok';
 
   return (
     <div className="fill-column-container">
@@ -46,3 +46,4 @@ export default function FillColumn({
     </div>
   );
 }
+

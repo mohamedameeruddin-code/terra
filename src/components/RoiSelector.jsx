@@ -293,3 +293,4 @@ export default function RoiSelector({ imageSrc, initialRoi, onRoiChange }) {
     </div>
   );
 }
+

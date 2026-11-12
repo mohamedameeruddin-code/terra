@@ -54,3 +54,4 @@ export async function loadAndNormalizeImage(fileOrBlob, maxSide = 1024) {
     img.src = url;
   });
 }
+

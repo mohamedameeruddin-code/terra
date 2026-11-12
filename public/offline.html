@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -15,11 +16,13 @@
       --sprout: #B8F53C;
       --ember: #EB5A3C;
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
       background-color: var(--soil-950);
       color: var(--bone);
@@ -32,6 +35,7 @@
       padding: 24px;
       text-align: center;
     }
+
     .card {
       background: var(--soil-900);
       border: 1px solid var(--line);
@@ -39,8 +43,9 @@
       padding: 32px 24px;
       max-width: 400px;
       width: 100%;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
+
     .badge {
       display: inline-block;
       background: rgba(235, 90, 60, 0.15);
@@ -54,6 +59,7 @@
       margin-bottom: 20px;
       border-radius: 2px;
     }
+
     h1 {
       font-size: 22px;
       font-weight: 800;
@@ -61,12 +67,14 @@
       margin-bottom: 12px;
       color: var(--bone);
     }
+
     p {
       color: var(--lichen);
       font-size: 14px;
       line-height: 1.6;
       margin-bottom: 28px;
     }
+
     .btn {
       background: var(--sprout);
       color: var(--soil-950);
@@ -81,17 +89,21 @@
       cursor: pointer;
       transition: transform 0.1s ease;
     }
+
     .btn:active {
       transform: scale(0.98);
     }
   </style>
 </head>
+
 <body>
   <div class="card">
     <div class="badge">NO SIGNAL</div>
     <h1>TERRA works offline once installed</h1>
-    <p>The network connection is currently unavailable. If TERRA was previously opened or installed, the application cache will load automatically.</p>
+    <p>The network connection is currently unavailable. If TERRA was previously opened or installed, the application
+      cache will load automatically.</p>
     <button class="btn" onclick="window.location.reload()">RETRY CONNECTION</button>
   </div>
 </body>
+
 </html>

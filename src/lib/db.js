@@ -293,3 +293,4 @@ export async function clearAllData() {
   await db.clear('images');
   await db.clear('bins');
 }
+

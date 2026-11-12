@@ -31,3 +31,4 @@ export function computeConfidence(profileScores, wasteLineIndex) {
   let conf = 0.4 + contrast * 0.6;
   return Math.max(0.1, Math.min(0.99, conf));
 }
+

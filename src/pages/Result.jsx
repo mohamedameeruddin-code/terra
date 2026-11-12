@@ -263,3 +263,4 @@ export default function ResultModal({ result, onRetake, onClose }) {
     </div>
   );
 }
+

@@ -209,3 +209,4 @@ fs.writeFileSync(path.join(ICONS_DIR, 'maskable-512.png'), createPng(512, 512, t
 fs.writeFileSync(path.join(ICONS_DIR, 'apple-touch-180.png'), createPng(180, 180, terraRenderer(false)));
 
 console.log('Successfully generated all icons in public/icons/');
+

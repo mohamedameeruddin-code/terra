@@ -24,3 +24,4 @@ export default function StatTile({ label, value, subtext, signal = 'normal' }) {
     </div>
   );
 }
+

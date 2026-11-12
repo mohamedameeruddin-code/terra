@@ -1,0 +1,280 @@
+@import './tokens.css';
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 180ms ease-out;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--sprout);
+  color: var(--soil-950);
+  border-color: var(--sprout);
+  box-shadow: 0 2px 8px rgba(184, 245, 60, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #cbff4d;
+  box-shadow: 0 4px 14px rgba(184, 245, 60, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--bone);
+  border-color: var(--line);
+}
+
+.btn-ghost:hover {
+  background-color: var(--soil-700);
+  border-color: var(--lichen);
+}
+
+.btn-danger {
+  background-color: rgba(235, 90, 60, 0.15);
+  color: var(--ember);
+  border-color: var(--ember);
+}
+
+.btn-danger:hover {
+  background-color: var(--ember);
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+.btn-lg {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   STATUS PILLS
+   ========================================================================== */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--line);
+  background: var(--soil-800);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px; /* Square dot as per Soil & Signal spec */
+}
+
+/* Status variants */
+.status-ok .status-dot { background-color: var(--sprout); box-shadow: 0 0 6px var(--sprout); }
+.status-ok { color: var(--sprout); border-color: rgba(184, 245, 60, 0.3); }
+
+.status-warn .status-dot { background-color: var(--rind); box-shadow: 0 0 6px var(--rind); }
+.status-warn { color: var(--rind); border-color: rgba(245, 165, 36, 0.3); }
+
+.status-critical .status-dot { background-color: var(--ember); box-shadow: 0 0 8px var(--ember); animation: pulse 1.8s infinite; }
+.status-critical { color: var(--ember); border-color: rgba(235, 90, 60, 0.4); background: rgba(235, 90, 60, 0.1); }
+
+.status-offline .status-dot { background-color: var(--ash); }
+.status-offline { color: var(--ash); border-color: var(--line); }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+}
+
+/* ==========================================================================
+   SIGNATURE FILL COLUMN (20 Stacked LED Cells)
+   ========================================================================== */
+.fill-column-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fill-column-meter {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse; /* Cell 0 at bottom, 19 at top */
+  width: 24px;
+  height: 120px;
+  gap: 2px;
+  padding: 3px;
+  background: var(--soil-950);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.fill-column-cell {
+  flex: 1;
+  width: 100%;
+  border-radius: 1px;
+  background-color: var(--soil-700);
+  transition: background-color 200ms ease;
+}
+
+.fill-column-cell.filled.status-ok { background-color: var(--sprout); box-shadow: 0 0 3px rgba(184, 245, 60, 0.4); }
+.fill-column-cell.filled.status-warn { background-color: var(--rind); box-shadow: 0 0 3px rgba(245, 165, 36, 0.4); }
+.fill-column-cell.filled.status-critical { background-color: var(--ember); box-shadow: 0 0 5px rgba(235, 90, 60, 0.5); }
+
+/* Ticks on the side */
+.fill-column-ticks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--lichen);
+  user-select: none;
+}
+
+/* Large Gauge Component (Circular for Vision Analysis) */
+.circular-gauge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gauge-pct-text {
+  font-family: var(--font-mono);
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--bone);
+  line-height: 1;
+}
+
+.gauge-sub-text {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--lichen);
+  margin-top: 4px;
+}
+
+/* ==========================================================================
+   INPUTS, FORMS & TABLES
+   ========================================================================== */
+.input, .select, .textarea {
+  width: 100%;
+  background: var(--soil-900);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--bone);
+  padding: 9px 12px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  border-color: var(--sprout);
+  box-shadow: 0 0 0 2px rgba(184, 245, 60, 0.2);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--soil-900);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table th {
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--lichen);
+  background: var(--soil-950);
+  border-bottom: 1px solid var(--line);
+}
+
+.data-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(46, 62, 53, 0.6);
+  font-size: 14px;
+  color: var(--bone);
+  vertical-align: middle;
+}
+
+.data-table tr:hover td {
+  background: var(--soil-800);
+}
+
+/* ==========================================================================
+   ALERT BANNER
+   ========================================================================== */
+.alert-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  background: rgba(235, 90, 60, 0.12);
+  border: 1px solid var(--ember);
+  border-radius: var(--radius);
+  box-shadow: var(--glow-ember);
+  margin-bottom: var(--space-6);
+  animation: bannerPulse 2.8s infinite;
+}
+
+@keyframes bannerPulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(235, 90, 60, 0.2); }
+  50% { box-shadow: 0 0 24px rgba(235, 90, 60, 0.45); }
+}
+
+.alert-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.alert-banner-text {
+  font-size: 14px;
+  color: var(--bone);
+}
+
+.alert-banner-text strong {
+  color: var(--ember);
+  font-family: var(--font-mono);
+}
+

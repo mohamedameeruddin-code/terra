@@ -37,3 +37,4 @@ if (failed) {
 } else {
   console.log('✅ Build check passed: 0 localhost/127.0.0.1 references found.');
 }
+

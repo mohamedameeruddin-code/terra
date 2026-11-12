@@ -118,3 +118,4 @@ export default function HistoryCard({ analysis, onSelect, onDelete }) {
     </div>
   );
 }
+

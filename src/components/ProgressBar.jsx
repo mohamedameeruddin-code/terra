@@ -33,3 +33,4 @@ export default function ProgressBar({ currentStep = 'PREPARING' }) {
     </div>
   );
 }
+

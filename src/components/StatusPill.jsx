@@ -15,3 +15,4 @@ export default function StatusPill({ status = 'OK' }) {
     </span>
   );
 }
+
