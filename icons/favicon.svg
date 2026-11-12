@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
+  <rect width="512" height="512" fill="#0A0F0C"/>
+  <g transform="translate(40.96, 40.96) scale(1.0752)">
+    <!-- Angled Lid -->
+    <path d="M 60 110 L 330 65 L 340 95 L 70 140 Z" fill="#B8F53C" />
+    <path d="M 180 75 L 205 50 L 235 55 L 210 80 Z" fill="#B8F53C" opacity="0.85" />
+    
+    <!-- Dustbin Body Rim -->
+    <rect x="75" y="145" width="250" height="20" rx="4" fill="#B8F53C" />
+    
+    <!-- Dustbin Tapered Body -->
+    <path d="M 90 175 L 115 350 Q 118 365 135 365 L 265 365 Q 282 365 285 350 L 310 175 Z" 
+          fill="#17211B" stroke="#B8F53C" stroke-width="14" stroke-linejoin="round" />
+          
+    <!-- Waste Fill Area / Pulse Line -->
+    <path d="M 106 270 Q 150 250 200 280 T 294 270 L 285 350 Q 282 365 265 365 L 135 365 Q 118 365 115 350 Z" 
+          fill="#B8F53C" opacity="0.25" />
+          
+    <!-- Pulse Line across the bin -->
+    <path d="M 50 260 L 120 260 L 145 220 L 175 300 L 205 240 L 225 270 L 255 260 L 350 260" 
+          fill="none" stroke="#B8F53C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+          
+    <!-- Sensor Signal Wave Arcs -->
+    <path d="M 170 30 Q 200 10 230 30" fill="none" stroke="#B8F53C" stroke-width="8" stroke-linecap="round" opacity="0.7" />
+    <path d="M 150 15 Q 200 -10 250 15" fill="none" stroke="#B8F53C" stroke-width="6" stroke-linecap="round" opacity="0.4" />
+  </g>
+</svg>
